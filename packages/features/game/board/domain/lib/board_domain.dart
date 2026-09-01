@@ -1,0 +1,10 @@
+export 'src/behaviors/choose_move.dart';
+export 'src/behaviors/evaluate_board.dart';
+export 'src/behaviors/play_move.dart';
+export 'src/behaviors/request_opponent_move.dart';
+export 'src/entities/board.br.dart';
+export 'src/entities/errors/opponent_error.br.dart';
+export 'src/entities/game_outcome.br.dart';
+export 'src/entities/mark.dart';
+export 'src/providers.br.dart';
+export 'src/repositories/opponent_repository.dart';

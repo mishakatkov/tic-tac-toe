@@ -1,0 +1,22 @@
+name: tactics_providers
+description: Design System — DI contracts of the Tactics palette (overridden in composition).
+version: 0.0.1
+
+environment:
+  flutter: ">=3.27.0"
+  sdk: ">=3.11.0 <4.0.0"
+resolution: workspace
+
+dependencies:
+  exceptions:
+  riverpod: ^3.2.1
+  riverpod_annotation: ^4.0.2
+  tactics_components:
+
+dev_dependencies:
+  build_runner: ^2.15.0
+  flutter_test:
+    sdk: flutter
+  givn:
+  riverpod_generator: ^4.0.3
+  shouldly: ^0.5.0+1

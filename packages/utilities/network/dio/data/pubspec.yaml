@@ -1,0 +1,22 @@
+name: network_dio_data
+description: Dio implementation of the network_domain contracts — the only package that knows Dio.
+version: 0.0.1
+
+environment:
+  flutter: ">=3.27.0"
+  sdk: ">=3.11.0 <4.0.0"
+resolution: workspace
+
+dependencies:
+  dio: ^5.7.0
+  network_domain:
+  riverpod: ^3.2.1
+  riverpod_annotation: ^4.0.2
+
+dev_dependencies:
+  build_runner: ^2.15.0
+  flutter_test:
+    sdk: flutter
+  givn:
+  riverpod_generator: ^4.0.3
+  shouldly: ^0.5.0+1

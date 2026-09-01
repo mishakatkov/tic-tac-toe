@@ -1,0 +1,26 @@
+# Workspace toolchain and tasks. `mise install`, then `mise run bs`.
+[tools]
+# Same version as flutter-front (the prod mise.toml).
+# melos is not enabled globally here: it is a workspace dev_dependency, invoked via
+# `dart run melos` in the tasks below.
+flutter = "3.44.4"
+
+[tasks.bs]
+description = "Resolves dependencies and bootstraps the workspace"
+run = ["dart pub get", "dart run melos bootstrap"]
+
+[tasks.generate]
+description = "Generates code (riverpod, freezed, auto_route, theme_tailor)"
+run = "dart run melos run generate"
+
+[tasks.analyze]
+description = "Static analysis across the whole workspace"
+run = "dart run melos run analyze"
+
+[tasks.test]
+description = "Runs the tests of every package that has some"
+run = "dart run melos run test"
+
+[tasks.format]
+description = "Formats the source code (120 columns, generated code excluded)"
+run = "dart run melos run format"
